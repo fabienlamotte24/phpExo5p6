@@ -7,7 +7,11 @@
   <body>
     <p>
 <?php
-  echo $_GET['week'];
+/*Vérfication des parametre*/
+if(isset($_GET['week'])){
+  /*Affichage des paramètres*/
+    echo $_GET['week'];
+}
 ?>
     </p>
   </body>
