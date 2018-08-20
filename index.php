@@ -6,13 +6,15 @@
   </head>
   <body>
     <p>
-<?php
-/*Vérfication des parametre*/
-if(isset($_GET['week'])){
-  /*Affichage des paramètres*/
-    echo $_GET['week'];
-}
-?>
+        <?php
+            //Vérfication des parametre
+            if(!empty($_GET['week'])){
+              //Affichage des paramètres
+                echo $_GET['week'];
+            } else {
+                echo 'Il manque un paramètre';
+            }
+        ?>
     </p>
   </body>
 </html>
